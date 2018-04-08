@@ -121,7 +121,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
     })
     .state('productcategories', {
         url: "/product_categories?ID",
-        templateUrl: "views/product_categories.html",
+        templateUrl: "views/product_categories.html?v=180408001",
         data: {pageTitle: '产品系列'},
         controller: "ProductCategoriesController",
         resolve: {

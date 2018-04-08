@@ -15,7 +15,7 @@ angular.module('FrangiApp').controller('ProductCategoriesController', ['$scope',
 		ID>=1&&ID<=8?true:ID=8;
 		$.ajax({ 
 			type: "GET", 
-			url: "json/product_categories.json", 
+			url: "json/product_categories.json?v=180408001", 
 			dataType: "json",
 			async:false,  
 			success: function (response) { 

@@ -54,7 +54,7 @@ angular.module('FrangiApp').controller('ProductController', ['$scope','$http','$
 	var GetCateLogFun=function(CateID){
 		$.ajax({ 
 			type: "GET", 
-			url: "json/product_categories.json", 
+			url: "json/product_categories.json?v=180408001", 
 			dataType: "json",
 			async:false,  
 			success: function (response) { 
