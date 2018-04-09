@@ -84,7 +84,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
     $stateProvider
     .state("home", {
         url: "/",
-        templateUrl: "views/home.html",
+        templateUrl: "views/home.html?v=180409002",
         data: {pageTitle:'FRANGI官方网站'},
         controller: "HomeController",
         resolve: {
