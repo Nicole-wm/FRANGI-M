@@ -144,6 +144,11 @@ a {
 	background-image: url(../img/base/icon.png);
 	background-repeat: no-repeat;
 }
+
+.footer_copy{
+	padding: 0 0.5rem;
+	opacity: 0.5;
+}
 /**************************************page**************************************/
 .page-wrapper{
 	width: 100%;
