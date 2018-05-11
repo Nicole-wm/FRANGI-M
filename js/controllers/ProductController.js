@@ -20,7 +20,7 @@ angular.module('FrangiApp').controller('ProductController', ['$scope','$http','$
 		ID>=0&&ID<=36?true:ID=0;
 		$.ajax({ 
 			type: "GET", 
-			url: "json/product.json", 
+			url: "json/product.json?v=18051101", 
 			dataType: "json",
 			async:false,  
 			success: function (response) { 
