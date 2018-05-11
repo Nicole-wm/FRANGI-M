@@ -15,7 +15,7 @@ angular.module('FrangiApp').controller('ProductCategoriesController', ['$scope',
 		ID>=1&&ID<=8?true:ID=8;
 		$.ajax({ 
 			type: "GET", 
-			url: "json/product_categories.json?v=180408001", 
+			url: "json/product_categories.json?v=18051101", 
 			dataType: "json",
 			async:false,  
 			success: function (response) { 
@@ -44,7 +44,7 @@ angular.module('FrangiApp').controller('ProductCategoriesController', ['$scope',
 		var ProAll=[];
 		$.ajax({ 
 			type: "GET", 
-			url: "json/product.json", 
+			url: "json/product.json?v=18051101", 
 			dataType: "json",
 			async:false,  
 			success: function (response) { 

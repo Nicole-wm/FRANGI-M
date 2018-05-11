@@ -84,7 +84,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
     $stateProvider
     .state("home", {
         url: "/",
-        templateUrl: "views/home.html?v=180510001",
+        templateUrl: "views/home.html?v=18051101",
         data: {pageTitle:'FRANGI官方网站'},
         controller: "HomeController",
         resolve: {
@@ -111,17 +111,17 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
     })
     .state("awards", {
         url:"/awards",
-        templateUrl: "views/awards.html?v=18040301",
+        templateUrl: "views/awards.html?v=180510001",
         data: {pageTitle:'国际设计'}
     })
     .state("top", {
         url:"/top",
-        templateUrl: "views/top.html",
+        templateUrl: "views/top.html?v=180510001",
         data: {pageTitle:'明星产品'}
     })
     .state('productcategories', {
         url: "/product_categories?ID",
-        templateUrl: "views/product_categories.html?v=180408001",
+        templateUrl: "views/product_categories.html?v=18051102",
         data: {pageTitle: '产品系列'},
         controller: "ProductCategoriesController",
         resolve: {
@@ -130,7 +130,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
                     name: 'FrangiApp',
                     files: [
                     'css/product_categories.css',
-                    'js/controllers/ProductCategoriesController.js'
+                    'js/controllers/ProductCategoriesController.js?v=18051102'
                     ] 
                 }]);
             }] 
@@ -138,7 +138,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
     })
     .state('product', {
         url: "/product?ID",
-        templateUrl: "views/product.html",
+        templateUrl: "views/product.html?v=18051102",
         data: {pageTitle: '产品详情'},
         controller: "ProductController",
         resolve: {
@@ -147,7 +147,7 @@ FrangiApp.config(["$stateProvider","$urlRouterProvider","$locationProvider",func
                     name: 'FrangiApp',
                     files: [
                     'css/product.css',
-                    'js/controllers/ProductController.js'
+                    'js/controllers/ProductController.js?v=18051102'
                     ] 
                 }]);
             }] 
